@@ -1,0 +1,44 @@
+@import './variables.scss';
+
+.App {
+  text-align: center;
+  
+  .App-header {
+    background-color: $primary-color;
+    color: white;
+    padding: 2rem;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+
+    h1 {
+      font-size: 5rem;
+    }
+  }
+}
+
+.primary-btn.danger{
+  @include primary-button;
+  background-color: $danger;
+}
+.primary-btn.success{
+  @include primary-button;
+  background-color: $success;
+}
+
+.secondary-btn.success{
+  @include secondary-button;
+  background-color: $success;
+}
+
+.monkey {
+  @include apan;
+  color: white;
+  background-color: hotpink;
+}
+
+
+h1 {
+  font-size: hej(1rem, 2rem, 5rem, 1rem);
+}

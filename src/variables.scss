@@ -1,0 +1,42 @@
+$primary-color: #088095;
+$secondary-color: #000;
+$danger: #d15757;
+$success: #7fe275;
+
+//mobile view
+
+@mixin apan {
+    background-color: brown;
+    height: 14rem;
+    width: 8rem;
+    font-size: 3rem;
+    border: 0.2rem solid hotpink;
+  }
+
+  @mixin primary-button {
+      height: 2rem;
+      width: 5rem;
+      padding: 0.5rem;
+      font-size: 0.5rem;
+      color: white;
+      border-color: 0.2rem solid white;
+      border-radius: 0.8rem;
+  }
+
+  @mixin secondary-button {
+    height: 2rem;
+    width: 5rem;
+    padding: 0.5rem;
+    font-size: 0.5rem;
+    color: black;
+    border-color: 0.4rem solid black;
+    border-radius: 0.8rem;
+}
+
+@function hej($numbers...) {
+    $hej: 1;
+    @each $number in $numbers {
+      $hej: $hej + $number;
+    }
+    @return $hej;
+  }
